@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #1c1e1f;
+}
+
+a {
+    color: #7deda5;
+}
+
+p {
+    color: #d1cdc7;
+}
+
+.header {
+    color: #d1cdc7;
+}

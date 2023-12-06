@@ -1,0 +1,36 @@
+ul {
+    list-style: none;
+}
+
+/* class selectors */
+.blueParagraph {
+    color: blue;
+    font-weight: 600;
+}
+
+/* ID selector */
+#yellowParagraph {
+    color: yellowgreen;
+    font-size: 32px;
+}
+
+.blackContainer {
+    padding: 20px;
+    width: fit-content;
+    border: 1px solid red;
+}
+/*div tags */
+div {
+    border: 1px solid red;
+    width: max-content;
+    height: 40px;
+}
+
+div.blackContainer {
+    margin: 30px;
+    background-color: black;
+}
+
+div.blackContainer a {
+    color: white;
+}
