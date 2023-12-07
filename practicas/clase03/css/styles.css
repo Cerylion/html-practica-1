@@ -1,0 +1,147 @@
+/* broSelector - hace la magia a lo que va justo despues del primer elemento*/
+#broSelector h3 + p {
+    color: red;
+}
+
+/* general Bro - hace la magia al elemento seguido de la ~ siempre que venga debajo en algun lado del primero, y que sean hermanos*/
+#generalBro h5 ~ button {
+    background-color: blue;
+    color: white;
+}
+/* son selector */
+#sonSelector > p {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#sonSelector > div > a {
+    font-size: 50px;
+}
+
+a[href="https://www.google.com"]
+{
+    color: green;
+}
+
+input[type="text"] {
+    width: 400px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#broSelector, #generalBro, #sonSelector {
+    background-color: bisque;
+    width: 600px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    background-color: blueviolet;
+}
+
+/* pseudo selctores y pseudoelementos */
+.btn {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(70, 70, 200);
+    color: rgb(70, 70, 200);
+}
+
+.btn:hover {
+    background-color: rgb(70, 70, 200);
+    color: white;
+}
+
+.imgHover:hover {
+    filter: sepia(1);
+}
+
+a:visited {
+    color:aqua;
+}
+
+a:link {
+    color: darksalmon;
+}
+
+a:active {
+    color: yellow;
+    text-decoration: none;
+}
+
+.boxList li {
+    width: 50px;
+    height: 50px;
+    background-color: #e3dee3;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/*seleccionador de primer hijo */
+.boxList li:first-child {
+
+    background-color: black;
+    height: 80px;
+    width: 80px;
+    color: white;
+    border-radius: 25%;
+}
+
+/*seleccionador del ultimo hijo */
+.boxList li:last-child {
+    background-color: red;
+    height: 80px;
+    width: 80px;
+    color: white;
+}
+
+/* seleccion en base a indice */
+.boxList li:nth-child(3) {
+    background-color: blue;
+    height: 80px;
+    width: 200px;
+    color: white;
+    border-radius: 50%;
+}
+
+.before::before {
+    content: "hola";
+}
+
+.after::after {
+    content: "created after rendering"
+}
+
+.firstletter::first-letter {
+    font-size: 45px;
+    font-style: italic;
+}
+
+.practica {
+    height: 40%;
+    width: 30%;
+    padding: 4%;
+    background-color: gray;
+    border-radius: 20%;
+    text-align: center;
+    margin: auto;
+}
+
+p::before {
+    content: "💬";
+}
+
+#first::after {
+    content: "😍";
+}
+
+#sec::after {
+    content: "🤔";
+}
+#third::after {
+    content: "👏";
+}
