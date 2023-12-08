@@ -1,0 +1,66 @@
+/* normalizer o reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    margin: auto;
+    padding: 2%;
+    width: fit-content;
+    background-color: aquamarine;
+    text-align: center;
+    box-sizing: content-box;
+    border-radius: 40%;
+}
+
+footer {
+    text-align: center;
+}
+
+.box {
+    width:fit-content;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.posicionRelativa {
+    position: relative;
+}
+
+.cajaRelativa {
+    top: 50px;
+    left: 250px;
+}
+
+.fixedPosition {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.absolutePosition {
+    position: absolute;
+}
+
+.absoluteBox {
+    top: 0;
+    left: 120px;
+}
+
+.stickyPosition {
+    position: sticky;
+}
+
+.stickyContainer p {
+    border: 5px solid #3498db;
+}
+
+.box.fixedPosition {
+z-index: 2;
+}

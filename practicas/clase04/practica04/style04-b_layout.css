@@ -1,0 +1,101 @@
+.mainContainer {
+    position: relative;
+    background-color: aliceblue;
+    border: 3px solid;
+    width: 800px;
+    height: 600px;
+}
+header {
+    position: static;
+    padding: 2%;
+    width: 96%;
+    height: 45px;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+.parCont {
+    position: absolute;
+    top: 5%;
+    padding: 0.5%;
+    width: 95%;
+    border-radius: 10px;
+    background-color: green;
+}
+.aside1 {
+    width: 15%;
+    height: 65%;
+    padding: 2%;
+    background-color: orange;
+    border-radius: 10px;
+}
+.mainContainer .aside1 {
+    position: absolute;
+    left: 0%;
+    top: 16%;
+}
+.aside2 {
+    position: absolute;
+    width: 15%;
+    height: 65%;
+    padding: 2%;
+    background-color: orange;
+    border-radius: 10px;
+}
+.mainContainer .aside2 {
+    position:absolute;
+    right: 0;
+    top: 16%;
+}
+main {
+    background-color: rgb(128, 18, 18);
+    border-radius: 10px;
+}
+.mainContainer main {
+    position: absolute;
+    left: 25%;
+    top: 16%;
+    width: 45%;
+    height: 65%;
+    padding: 2%;
+    background-color: rgb(rgb(128, 18, 18), green, blue);
+}
+article {
+    background-color: white;
+    padding: 4%;
+    border-radius: 10px;
+}
+main article:nth-child(1){
+    top: 30%;
+    width: 84%;
+}
+main article:nth-child(2){
+    position: absolute;
+    top: 42%;
+    width: 84%;
+}
+main article:nth-child(3){
+    position: absolute;
+    top: 75%;
+    width: 84%;
+}
+footer {
+    background-color: plum;
+    padding: 3%;
+    border-radius: 10px;
+}
+.mainContainer footer {
+    position: absolute;
+    bottom: 0;
+    width: 94%;
+}
+.coolButton {
+    transition:all 400ms ease-in-out;
+    margin: auto;
+    position: absolute;
+    left: 48%;
+    border-radius: 10px;
+}
+.coolButton:hover {
+    background-color: #5d85a0;
+    transform: scale(1.2);
+}
