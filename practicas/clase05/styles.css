@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+.coolButton {
+    transition:all 400ms ease-in-out;
+    margin: auto;
+    position: absolute;
+    left: 48%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.coolButton:hover {
+    background-color: #5d85a0;
+    transform: scale(1.2);
+}
+
+body {
+    overflow:scroll;
+}
+
+.noResponsArt {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
+
+.responsiveArt {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.responseBro1 {
+    text-align: center;
+    width: 13%;
+    height: 8%;
+    background-color: aliceblue;
+    color: black;
+    display: inline-block;
+}
+
+.responseBro2 {
+    text-align: end;
+    text-decoration: double;
+    width: 29%;
+    height: 15%;
+    background-color: yellow;
+    color: red;
+    display: inline-block;
+}
+
+.responseBro3 {
+    width: 50%;
+    background-color: green;
+    height: 45%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*para cel muy pequeños */
+@media screen and (min-width: 600px){
+    body {background-color: blue;};
+    .visMobile {display: block;}
+    .visTablet {display: none;}
+    .visLappy {display: none;}
+    .visDesktop {display: none;}
+}
+
+/* para Tablet */
+@media screen and (min-width: 768px) {
+    body {background-color: green;}
+    .visTablet {display: block;}
+    .visMobile {display: none;}
+    .visLappy {display: none;}
+    .visDesktop {display: none;}
+}
+
+/* Lappy */
+@media screen and (min-width: 992px) {
+    body {background-color: red;}
+    .visLappy {display: block;}
+    .visMobile {display: none;}
+    .visTablet {display: none;}
+    .visDesktop {display: none;}
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    body {background-color: brown;}
+    .visDesktop {display: block;}
+    .visMobile {display: none;}
+    .visTablet {display: none;}
+    .visLappy {display: none;}
+    }
+
+@media screen and (max-width: 600px) {
+    .noResponsArt{
+        background-color: green
+    }
+        
+    .responseBro1 , .responseBro2, .responseBro3{
+        width: 100%;        
+    }
+}
